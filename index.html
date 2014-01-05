@@ -1,0 +1,16 @@
+---
+layout: default
+title: jennyxiao的技术博客
+---
+<div class="panel panel-success">
+<div class="panel-heading">
+<h3>所有文章</h3>
+</div>
+<div class="panel-body">
+<ul>
+	{% for post in site.posts %}
+	<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
+</div>
+</div>
